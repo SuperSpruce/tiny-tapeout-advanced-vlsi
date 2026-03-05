@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project is a digital multiplier that will multiply two 4-bit unsigned integers into a single 8-bit integer. The 8-bit input is split into the two 4-bit operands by making the first 4 bits the first operand and the last 4 bits the second operand.
 
 ## How to test
 
-Explain how to use your project
+This project can be tested virtually by running a testbench verilog simulation.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+8 input pins and 8 output pins are needed for full functionality.
