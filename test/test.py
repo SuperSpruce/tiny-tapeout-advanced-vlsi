@@ -41,15 +41,15 @@ async def test_project(dut):
     
     #randomly create 2 logic arrays of 4 bits to concatenate together
     for j in range(0,4):
-    A = cocotb.types.LogicArray.from_unsigned((random.random()>0.5)<<(j+4),8) | A;
-    B = cocotb.types.LogicArray.from_unsigned((random.random()>0.5)<<j,8) | B;
-    u_in = A | B;
-    #cast logic arrays to ints and multiply them
-    A_int = int(A) >> 4
-    B_int = int(B)
-    P_int = A_int * B_int
-    P = cocotb.types.LogicArray.from_unsigned(0x00, 8)
-    P.value = P_int
+      A = cocotb.types.LogicArray.from_unsigned((random.random()>0.5)<<(j+4),8) | A;
+      B = cocotb.types.LogicArray.from_unsigned((random.random()>0.5)<<j,8) | B;
+      u_in = A | B;
+      #cast logic arrays to ints and multiply them
+      A_int = int(A) >> 4
+      B_int = int(B)
+      P_int = A_int * B_int
+      P = cocotb.types.LogicArray.from_unsigned(0x00, 8)
+      P.value = P_int
     
     #send in new value to the array
     dut.ui_in.value = u_in
