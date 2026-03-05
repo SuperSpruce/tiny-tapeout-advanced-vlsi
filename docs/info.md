@@ -13,7 +13,7 @@ This project is a digital multiplier that will multiply two 4-bit unsigned integ
 
 ## How to test
 
-This project can be tested virtually by running a testbench verilog simulation.
+This project can be tested virtually by running the test.py script, located in the test directory.
 
 ## External hardware
 
